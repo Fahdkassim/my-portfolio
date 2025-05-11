@@ -18,8 +18,8 @@ export default function HeroSection() {
   return (
     <div className='bg-white'>
       <header className='absolute inset-x-0 top-0 z-50'>
-        <div className='mx-auto max-w-7xl'>
-          <div className='px-6 pt-6 lg:max-w-2xl lg:pl-8 lg:pr-0'>
+        <div className='mx-auto fixed bg-white lg:bg-transparent w-full'>
+          <div className='px-6 pt-6 lg:max-w-2xl lg:pl-8 lg:pr-0 pb-4'>
             <nav
               aria-label='Global'
               className='flex items-center justify-between lg:justify-start'
@@ -27,7 +27,7 @@ export default function HeroSection() {
               <a href='#' className='-m-1.5 p-1.5'>
                 <span className='sr-only'>Home</span>
                 <img
-                  alt='Your Company'
+                  alt='Fahd'
                   src='images/fahd.png'
                   className='h-8 w-auto rounded-full'
                 />
@@ -136,7 +136,7 @@ export default function HeroSection() {
           <img
             alt=''
             src='images/fahd.png'
-            className=' object-cover  lg:size-full'
+            className=' object-cover lg:size-full'
           />
         </div>
       </div>
