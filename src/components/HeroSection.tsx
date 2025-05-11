@@ -28,7 +28,7 @@ export default function HeroSection() {
                 <span className='sr-only'>Home</span>
                 <img
                   alt='Fahd'
-                  src='images/fahd.png'
+                  src='images/fahd.webp'
                   className='h-8 w-auto rounded-full'
                 />
               </a>
@@ -135,7 +135,7 @@ export default function HeroSection() {
         <div className='bg-gray-50 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2'>
           <img
             alt=''
-            src='images/fahd.png'
+            src='images/fahd.webp'
             className=' object-cover lg:size-full'
           />
         </div>
