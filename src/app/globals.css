@@ -2,28 +2,31 @@
 
 @theme {
   --font-sans: InterVariable, sans-serif;
-
   --animate-typing: typing 2s steps(20) infinite alternate, blink 0.7s infinite;
-
-  @keyframes typing {
-    0% {
-      width: 0%;
-      visibility: hidden;
-    }
-    100% {
-      width: 100%;
-    }
+}
+@keyframes typing {
+  0% {
+    width: 0%;
+    visibility: hidden;
   }
-
-  @keyframes blink {
-    50% {
-      border-color: transparent;
-    }
-    100% {
-      border-color: white;
-    }
+  100% {
+    width: 100%;
   }
 }
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+  100% {
+    border-color: white;
+  }
+}
+
 body {
   @apply bg-white text-black font-sans;
+}
+
+@utility clip-path-slant-left {
+  clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
