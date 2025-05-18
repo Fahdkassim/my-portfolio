@@ -1,7 +1,5 @@
 'use client';
 
-import Image from 'next/image';
-
 export default function HeroSection() {
   return (
     <div className=''>
@@ -26,12 +24,12 @@ export default function HeroSection() {
           </div>
         </div>
         <div className='lg:w-1/2 w-full'>
-          <Image
+          <img
             alt='fahd'
             src='/images/fahd.webp'
-            height={600}
-            width={800}
             className='object-cover mx-auto overflow-hidden lg:clip-path-slant-left'
+            height='600'
+            width='800'
           />
         </div>
       </div>
