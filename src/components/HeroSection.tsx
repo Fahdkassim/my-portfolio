@@ -26,7 +26,7 @@ export default function HeroSection() {
         <div className='lg:w-1/2 w-full'>
           <img
             alt='fahd'
-            src='/images/fahd.webp'
+            src='images/fahd.webp'
             className='object-cover mx-auto overflow-hidden lg:clip-path-slant-left'
             height='600'
             width='800'
