@@ -1,6 +1,30 @@
 import React from 'react';
 
 const Skills = () => {
+  const techLanguages = ['TypeScript', 'JavaScript', 'HTML', 'CSS'];
+  const frontendTools = [
+    'React.js',
+    'Next.js',
+    'Tailwind CSS',
+    'Redux',
+    'Storybook',
+    'React Hook Form / Formik',
+  ];
+  const devTools = [
+    'Git / GitHub',
+    'NX (monorepo architecture)',
+    'Firebase',
+    'Vercel',
+    'Postman',
+    'VS Code',
+  ];
+  const devSkills = [
+    'Component Design & UI/UX Principles',
+    'API Integration & Testing',
+    'Agile Workflow Experience',
+    'Accessibility',
+    'Performance Optimization',
+  ];
   return (
     <div className='mx-6 mt-4'>
       <p className='text-4xl font-bold text-black'>My Skills</p>
@@ -49,52 +73,83 @@ const Skills = () => {
           </li>
         </ul>
       </div>
-      <p className='text-2xl font-bold text-black mt-8'>💻 Technical Skills</p>
       <div>
-        <div className='mt-8 text-pretty text-xl font-medium text-gray-500 lg:text-justify'>
-          <p className='text-xl font-bold text-black my-4'>
-            Languages & Markup
+        <p className='text-2xl font-bold text-black mt-8'>
+          💻 Technical Skills
+        </p>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mb-8'>
+          <div className='mt-8 text-pretty text-xl font-medium text-gray-500 lg:text-justify'>
+            <p className='text-xl font-bold text-black my-4'>
+              Languages & Markup
+            </p>
+            <ul className='pl-2 space-y-1 disc'>
+              {techLanguages.map((lang, index) => (
+                <li key={index} className='my-2'>
+                  <div className='inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-lg font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20'>
+                    {lang}
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className='mt-8 text-pretty text-xl font-medium text-gray-500 lg:text-justify'>
+            <p className='text-xl font-bold text-black my-4'>
+              Frameworks & Libraries
+            </p>
+            <ul className='pl-2 space-y-1 disc'>
+              {frontendTools.map((lang, index) => (
+                <li key={index} className='my-2'>
+                  <div className='inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-lg font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20'>
+                    {lang}
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className='mt-8 text-pretty text-xl font-medium text-gray-500 lg:text-justify'>
+            <p className='text-xl font-bold text-black my-4'>
+              Tools & Platforms
+            </p>
+            <ul className='pl-2 space-y-1 disc'>
+              {devTools.map((lang, index) => (
+                <li key={index} className='my-2'>
+                  <div className='inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-lg font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20'>
+                    {lang}
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className='mt-8 text-pretty text-xl font-medium text-gray-500 lg:text-justify'>
+            <p className='text-xl font-bold text-black my-4'>Other</p>
+            <ul className='pl-2 space-y-1 disc'>
+              {devSkills.map((lang, index) => (
+                <li key={index} className='my-2'>
+                  <div className='inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-lg font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20'>
+                    {lang}
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+        <p className='text-2xl font-bold text-black mt-8'>Badges</p>
+        <div className='flex flex-col'>
+          <img
+            alt='github-badge'
+            src='https://github.githubassets.com/assets/pull-shark-default-498c279a747d.png'
+            className=' ml-4 mt-4'
+            height='100'
+            width='100'
+          />
+          <p className='hover:text-blue-400'>
+            <a
+              href='https://github.com/users/Fahdkassim/achievements/pull-shark'
+              target='_blank'
+            >
+              Github - Pull Shark
+            </a>
           </p>
-          <ul className='list-disc pl-5 space-y-1'>
-            <li>TypeScript</li>
-            <li>JavaScript</li>
-            <li>HTML</li>
-            <li>CSS</li>
-          </ul>
-        </div>
-        <div className='mt-8 text-pretty text-xl font-medium text-gray-500 lg:text-justify'>
-          <p className='text-xl font-bold text-black my-4'>
-            Frameworks & Libraries
-          </p>
-          <ul className='list-disc pl-5 space-y-1'>
-            <li>React.js</li>
-            <li>Next.js</li>
-            <li>Tailwind CSS</li>
-            <li>Redux</li>
-            <li>Storybook</li>
-            <li>React Hook Form / Formik</li>
-          </ul>
-        </div>
-        <div className='mt-8 text-pretty text-xl font-medium text-gray-500 lg:text-justify'>
-          <p className='text-xl font-bold text-black my-4'>Tools & Platforms</p>
-          <ul className='list-disc pl-5 space-y-1'>
-            <li>Git / GitHub</li>
-            <li>NX (monorepo architecture)</li>
-            <li>Firebase</li>
-            <li>Vercel</li>
-            <li>Postman</li>
-            <li>VS Code</li>
-          </ul>
-        </div>
-        <div className='mt-8 text-pretty text-xl font-medium text-gray-500 lg:text-justify'>
-          <p className='text-xl font-bold text-black my-4'>Other</p>
-          <ul className='list-disc pl-5 space-y-1'>
-            <li>Component Design & UI/UX Principles</li>
-            <li>API Integration & Testing</li>
-            <li>Agile Workflow Experience</li>
-            <li>Accessibility</li>
-            <li>Performance Optimization</li>
-          </ul>
         </div>
       </div>
     </div>

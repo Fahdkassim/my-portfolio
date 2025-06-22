@@ -2,11 +2,12 @@ import AboutSection from '@/components/AboutSection';
 import HeroSection from '@/components/HeroSection';
 import Navbar from '@/components/Navbar';
 import Skills from '@/components/Skills';
+import Projects from '@/components/Projects';
 
 export default function Home() {
   return (
     <>
-      <div className=' text-green-500'>
+      <div>
         <section>
           <Navbar />
         </section>
@@ -18,6 +19,9 @@ export default function Home() {
         </section>
         <section id='skills' className='mt-24 scroll-mt-20'>
           <Skills />
+        </section>
+        <section id='projects' className='mt-24 scroll-mt-20'>
+          {/* <Projects /> */}
         </section>
       </div>
     </>
