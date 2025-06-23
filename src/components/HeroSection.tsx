@@ -12,7 +12,7 @@ export default function HeroSection() {
                   Hi, I'm Fahd
                 </h1>
                 <p className='mt-8 text-pretty text-lg font-medium text-gray-500 sm:text-xl text-justify leading-loose'>
-                  I'm a software Engineer working as a frontend developer with
+                  I'm a Software Engineer working as a frontend developer with
                   hands-on experience in building scalable UI component
                   libraries, integrating APIs, and collaborating with backend
                   teams. I’ve worked with technologies like Next.js, Storybook,
