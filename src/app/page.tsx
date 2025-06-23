@@ -20,9 +20,9 @@ export default function Home() {
         <section id='skills' className='mt-24 scroll-mt-20'>
           <Skills />
         </section>
-        <section id='projects' className='mt-24 scroll-mt-20'>
-          {/* <Projects /> */}
-        </section>
+        {/* <section id='projects' className='mt-24 scroll-mt-20'>
+          <Projects />
+        </section> */}
       </div>
     </>
   );
